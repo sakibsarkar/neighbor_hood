@@ -1,0 +1,101 @@
+
+
+.news-feed-scroll { /* Control the size of the scroll */
+  height: 100vh;
+  width: calc(55% - 20px);
+  max-width: 700px;
+  margin-bottom: 20px;
+  overflow: auto; /* makes it scrollable */
+  padding: 1%;
+}
+
+.news-feed-scroll::-webkit-scrollbar {
+  display: none; /* hides the scroll bar */
+}
+
+
+.parent-news-feed-post-container {
+  margin-top: 1.5%;
+}
+
+.news-feed-post-container {
+  box-sizing: border-box;
+  margin-block: 0px;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, HelveticaNeue, "Helvetica Neue", Helvetica, Roboto, "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 480px) {
+  .news-feed-post-container {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      border: none;
+  }
+}
+
+.news-feed-post-media-container {
+  padding: 12px 16px 4px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .news-feed-post-comments-parent-container{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, HelveticaNeue, "Helvetica Neue", Helvetica, Roboto, "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  box-sizing: border-box;
+  margin-block: 0px;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+}
+
+
+.news-feed-post-comments-child-container{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, HelveticaNeue, "Helvetica Neue", Helvetica, Roboto, "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  box-sizing: border-box;
+  margin-block: 0px;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+} */
