@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import "./index.css";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
