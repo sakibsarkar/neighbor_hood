@@ -5,6 +5,7 @@ import "./PostStats.css";
 import HeartIcon from "../../../../../icon/HeartIcon";
 import CommentIcon from "../../../../../icon/CommentIcon";
 import ShareIcon from "../../../../../icon/shareIcon";
+import Image from "next/image";
 
 export default function PostStats({ post }) {
   // const dispatch = useDispatch();
@@ -120,7 +121,9 @@ export default function PostStats({ post }) {
                       <div className="news-feed-post-share-menu">
                         <button>
                           <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.neighborhoodnode.com/">
-                            <img
+                            <Image
+                              height={100}
+                              width={100}
                               className="news-feed-social-share-company-logo"
                               src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/9c885269569db3947bfe.svg"
                               alt="facebook"
@@ -133,7 +136,9 @@ export default function PostStats({ post }) {
                         </button>
                         <button>
                           <a href="https://twitter.com/intent/tweet?button_hashtag=share&ref_src=twsrc%5Etfw">
-                            <img
+                            <Image
+                              height={100}
+                              width={100}
                               className="news-feed-social-share-company-logo"
                               src="https://www.vhv.rs/dpng/d/146-1461722_twitter-circle-twitter-logo-png-transparent-png.png"
                               alt="twitter"

@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // import { updatePost, deletePost } from "../../../../../store/posts";
 import './PostOwnerInfo.css';
+import Image from "next/image";
 // import profile from '../../../../../assets/profile.png'
 
 export default function PostOwnerInfo({ post }) {
@@ -179,8 +180,9 @@ export default function PostOwnerInfo({ post }) {
               onMouseLeave={handleMouseLeave}>
               <span className="post-news-feed-owner-avatar" >
                 <div className="post-news-feed-owner-avatar-image">
-                  <img
-                    className="news-feed-user-avatar-image" alt="user avatar" src="/" />
+                  <Image
+                  width={400} height={400}
+                    className="news-feed-user-avatar-image" alt="user avatar" src="/images/profile-icon-9.png" />
                 </div>
               </span>
             </div>
@@ -201,7 +203,9 @@ export default function PostOwnerInfo({ post }) {
             {showPopup && (
               <div className="news-feed-post-user-profile-popup">
                 <div className="sub-news-feed-post-user-profile-popup">
-                  <img className="popup-news-feed-user-avatar-image" alt="user avatar" src="/" />
+                  <Image
+                  width={400}
+                  height={400} className="popup-news-feed-user-avatar-image" alt="user avatar" src="/images/profile-icon-9.png" />
                   <div className="popup-news-feed-user-info-container">
                     <div className="popup-news-feed-post-user-name">
                       {post.authorFirstName}&nbsp;{post.authorLastName}

@@ -7,7 +7,7 @@ import './NewsFeed.css'
 const page = () => {
   return (
     <div className="news-feed-page-wrapper">
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="news-feed-main-container">
         <FeedIndex />
         <PersonalFeed />

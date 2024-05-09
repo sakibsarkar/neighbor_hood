@@ -124,7 +124,8 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   padding: 16px;
-  width: calc(300px + #{$popup-news-feed-post-user-name}); /* this seems to help */
+  /* width: calc(300px + #{$popup-news-feed-post-user-name}); this seems to help */
+  width: calc(300px + 200px);
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // import { createComment } from "../../../../../store/comments";
 import "./PostCommentsBox.css";
+import Image from "next/image";
 // import profile from '../../../../../assets/profile.png'
 
 export default function PostCommentsBox({post}) {
@@ -49,7 +50,8 @@ export default function PostCommentsBox({post}) {
           <span className="parent-news-feed-comment-user-avatar">
             <div className="news-feed-comment-user-avatar">
             {/* {sessionUser && ( */}
-              <img className="news-feed-comment-user-avatar-image" alt="user avatar" src="/" />
+              <Image 
+              width={400} height={400} className="news-feed-comment-user-avatar-image" alt="user avatar" src="/images/profile-icon-9.png" />
               {/* )} */}
             </div>
           </span>

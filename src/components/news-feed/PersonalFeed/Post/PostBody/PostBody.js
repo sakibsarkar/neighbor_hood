@@ -96,9 +96,11 @@ export default function PostBody({ post }) {
           ref={modalRef}
         >
           <div className="news-feed-post-body-modal-content">
-            <img
+            <Image
+            width={400}
+            height={400}
               className="news-feed-post-body-modal-img"
-              src="/"
+              src="/images/profile-icon-9.png"
               alt="post"
               ref={imgRef}
               onLoad={updateImageSize}

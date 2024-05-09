@@ -1,7 +1,18 @@
+'use client'
 import Link from "next/link";
-import "./feedIndex.css"
+import "./feedIndex.css";
+import Image from "next/image";
+import ModalPOst from "../PersonalFeed/shared/ModalPOst";
+import { useState } from "react";
 
 const FeedIndex = () => {
+
+  const [openModal, setOpenModal] = useState(false);
+
+  const toggleModal = () => {
+    setOpenModal(!openModal);
+  };
+
   return (
     <div>
       <div className="news-feed-index">
@@ -28,7 +39,7 @@ const FeedIndex = () => {
           <div className="news-feed-index-post-button-container">
             <button
               className="news-feed-index-post-button"
-            //   onClick={toggleModal}
+              onClick={toggleModal}
             >
               <span className="news-feed-index-post-button-content">
                 <svg
@@ -47,6 +58,51 @@ const FeedIndex = () => {
           </div>
         </div>
       </div>
+      <div className="news-feed-index-footer-menue-container">
+        <footer
+          className="news-feed-index-footer"
+          tabIndex="0"
+          aria-label="Footer"
+        >
+          <div className="news-feed-index-copyright-container">
+            <div className="news-feed-footer-copyright">
+              © 2023 Neighborhood Node
+            </div>
+            <div className="linkedin-logo">
+              <a
+                href="https://www.linkedin.com/in/christopher-banas/"
+                className="news-feed-nav-bar-linkedin-logo"
+              >
+                <Image
+                  width={20}
+                  height={20}
+                  src="/images/linkedin.png"
+                  className="new-feed-neighborhood-node-likedin-logo"
+                  alt="LinkedIn logo"
+                />
+              </a>
+            </div>
+            <div className="github-logo">
+              <a
+                href="https://github.com/chrisbanas/neighborhood_node"
+                className="news-feed-nav-bar-github-logo"
+              >
+                <Image
+                  width={20}
+                  height={20}
+                  src="/images/github.png"
+                  className="new-feed-neighborhood-node-github-logo"
+                  alt="Github logo"
+                />
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      {openModal && (
+        <ModalPOst toggleModal={toggleModal} />
+      )}
     </div>
   );
 };
